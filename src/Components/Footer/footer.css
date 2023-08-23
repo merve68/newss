@@ -1,0 +1,26 @@
+.footer {
+  background: blueviolet;
+  height: auto;
+}
+.footer .footerMenu {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footerMenu .navLists {
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding: 0.5rem 0;
+}
+.footer .footerMenu .navLists .navItem {
+  padding: 0.8rem 0;
+}
+.footer .footerMenu .navLists .navItem .navLink {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.footer .footerMenu .navLists .navItem .navLink:hover {
+  color: black;
+}/*# sourceMappingURL=footer.css.map */

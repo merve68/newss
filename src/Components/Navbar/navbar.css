@@ -1,0 +1,100 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9058823529);
+  transition: 0.3s ease-in-out;
+  height: 70px;
+}
+.header .logo {
+  color: #551a8b;
+  font-size: 22px;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .header .navBar {
+    position: absolute;
+    background: #dddddd;
+    height: -moz-max-content;
+    height: max-content;
+    width: 60%;
+    padding: 1rem;
+    border-radius: 1rem;
+    top: -500rem;
+    left: 40%;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 1px rgba(2, 15, 29, 0.251);
+    transition: 0.3s ease-in-out;
+  }
+  .header .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 0.8rem 0;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: #551a8b;
+  }
+  .header .navBar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+  .header .navBar .closeNavbar:hover {
+    color: #551a8b;
+  }
+  .header .activeNavbar {
+    top: 7rem;
+  }
+}
+.header .toogleNavbar .icon {
+  font-size: 25px;
+  color: #551a8b;
+}
+.header .toogleNavbar:hover.icon {
+  color: blue;
+}
+
+@media screen and (min-width: 769px) {
+  .toogleNavbar, .closeNavbar {
+    display: none;
+  }
+  .header {
+    padding: 1.5rem 4rem;
+  }
+  .header .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: #551a8b;
+    padding: 0 0.45rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: black;
+  }
+}
+@media screen and (min-width: 968px) {
+  .header .navBar .navLists .navItem {
+    padding: 0 0.7rem;
+  }
+}/*# sourceMappingURL=navbar.css.map */

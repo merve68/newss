@@ -1,0 +1,31 @@
+.footer{
+    background: blueviolet;
+    height: auto;
+    
+    .footerMenu{
+       display: flex;
+       flex-direction: column;
+     
+        .navLists {
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+            padding: 0.5rem 0;
+            .navItem {
+                padding: .8rem 0;
+        
+                .navLink {
+                  color: white;
+                  font-size: 0.9rem;
+                  font-weight: 600;
+                  &:hover {
+                    color: black;
+                  }
+                
+                }
+              }
+       }
+    
+    }
+}

@@ -1,0 +1,110 @@
+.main {
+  width: 100%;
+}
+.main .secTittle .tittle {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: blueviolet;
+  margin: 1rem 0;
+  z-index: 2;
+  font-size: 30px;
+}
+.main .secTittle .tittle::after {
+  position: absolute;
+  content: "";
+  background: "gray";
+  height: 5px;
+  width: 120px;
+  right: 0;
+  bottom: 5px;
+  z-index: -1;
+}
+.main .seCContent {
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+.main .seCContent .singleDestination {
+  height: 60%;
+  width: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  align-items: center;
+  background: #d3c1ff;
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+  padding: 1rem;
+}
+.main .seCContent .singleDestination:hover {
+  background: white;
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+.main .seCContent .singleDestination .cardInfo {
+  padding: 1rem;
+}
+.main .seCContent .singleDestination .cardInfo .desTitle {
+  color: black;
+  font-size: 1.25rem;
+}
+.main .seCContent .singleDestination .desc {
+  font-size: 13.5px;
+  color: black;
+  font-weight: 500;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.main .seCContent .singleDestination .btn {
+  margin-top: 1rem;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 80px;
+  background: blueviolet;
+  height: 40px;
+}
+.main .seCContent .singleDestination .btn .icon {
+  align-self: center;
+}
+
+@media screen and (min-width: 500px) {
+  .tittle {
+    font-size: 1.5rem;
+  }
+  .tittle::after {
+    width: 100px !important;
+  }
+  .seCContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .seCContent .singleDestination {
+    height: 60%;
+    width: 60%;
+    display: grid;
+    row-gap: 5px;
+    border-radius: 10px;
+    align-items: center;
+    background: #d3c1ff;
+    box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+    overflow: hidden;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 940px) {
+  .tittle {
+    font-size: 1.5rem;
+  }
+  .tittle::after {
+    width: 155px !important;
+  }
+  .seCContent {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .seCContent .singleDestination {
+    height: auto;
+  }
+}/*# sourceMappingURL=categories.css.map */
